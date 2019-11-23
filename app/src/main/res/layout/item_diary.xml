@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+    <TextView
+            android:text="2019/2/21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/diarytext1" android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"/>
+    <TextView
+            android:text="p21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/diarytext2" android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp" android:layout_marginTop="8dp"
+    />
+    <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/diarytext3" android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp" android:layout_marginTop="8dp"
+    />
+    <TextView
+            android:text="책id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/diarytext4" android:visibility="gone"/>
+    <TextView
+            android:text="다이어리id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/diarytext5" android:visibility="gone"/>
+</LinearLayout>

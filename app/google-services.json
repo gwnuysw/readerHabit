@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "89137360505",
+    "firebase_url": "https://appforocr.firebaseio.com",
+    "project_id": "appforocr",
+    "storage_bucket": "appforocr.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:89137360505:android:978ccbbafcb654bd752ea8",
+        "android_client_info": {
+          "package_name": "com.example.readerhabit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "89137360505-cmr63reo3tlufonhd8o0tfsn4mbtoipb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.readerhabit",
+            "certificate_hash": "fdd2a42ce1156582b1a543984026f4806c7af6c8"
+          }
+        },
+        {
+          "client_id": "89137360505-a0q3fp36hpueppcvrdv0l8j238orn431.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVTARhfbgY6vYTEiTN46w3qVthpPMZDfM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "89137360505-a0q3fp36hpueppcvrdv0l8j238orn431.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

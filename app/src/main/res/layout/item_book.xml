@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <TextView
+            android:text="2019/11/15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text1"
+            android:layout_marginStart="8dp" android:layout_marginEnd="8dp"/>
+    <TextView
+            android:text="짜라두짜는 이렇게 말했다."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text2"
+            android:layout_marginStart="8dp" android:layout_marginEnd="8dp"/>
+    <TextView
+            android:text="프리드리히 니체"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/text3"
+            android:layout_marginStart="8dp" android:layout_marginEnd="8dp"/>
+    <TextView
+            android:text="나무"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text4"
+            android:layout_marginStart="8dp" android:layout_marginEnd="8dp"/>
+    <TextView
+            android:text="문재인"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text5"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"/>
+    <TextView
+            android:text="책id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text6"
+            android:visibility="gone"/>
+</LinearLayout>
