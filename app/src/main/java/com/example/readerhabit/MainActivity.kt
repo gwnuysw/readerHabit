@@ -8,9 +8,11 @@ import android.os.Bundle
 import android.support.v4.app.ActivityCompat
 import android.support.v4.content.ContextCompat
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import android.view.View.INVISIBLE
 import android.widget.AdapterView
 import io.realm.Realm
 import io.realm.Sort
@@ -38,6 +40,11 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemLongClickListener{
         setSupportActionBar(toolbar)
 
         val realmResult = realm.where<Book>().findAll().sort("date", Sort.DESCENDING)
+        Log.d("check",realmResult.size.toString())
+        if(realmResult.size > 0){
+            imageView.visibility = INVISIBLE
+            noitemText.visibility = INVISIBLE
+        }
         val adapter = BookListAdapter(realmResult)
         listView.adapter = adapter
 

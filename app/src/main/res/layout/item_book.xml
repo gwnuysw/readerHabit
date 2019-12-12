@@ -17,25 +17,48 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/text2"
-            android:layout_marginStart="8dp" android:layout_marginEnd="8dp"/>
-    <TextView
-            android:text="프리드리히 니체"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/text3"
-            android:layout_marginStart="8dp" android:layout_marginEnd="8dp"/>
-    <TextView
-            android:text="나무"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/text4"
-            android:layout_marginStart="8dp" android:layout_marginEnd="8dp"/>
-    <TextView
-            android:text="문재인"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/text5"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"/>
+            android:layout_marginStart="8dp" android:layout_marginEnd="8dp" android:textSize="20dp"
+            android:fontFamily="@font/contrail_one"/>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+                android:text="프리드리히 니체"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/text3"
+                android:layout_marginStart="8dp" android:layout_marginEnd="8dp"
+                android:layout_weight="1"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="출판사 : "
+                  android:gravity="center"
+                android:layout_weight="2"/>
+        <TextView
+                android:text="나무"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/text4"
+                android:layout_weight="2"
+                android:layout_marginStart="8dp" android:layout_marginEnd="8dp"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="horizontal">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="옮긴이 : "
+                android:gravity="right"
+                android:layout_weight="1"
+                />
+        <TextView
+                android:text="문재인"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text5"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="3"
+                android:gravity="center"/>
+    </LinearLayout>
+
     <TextView
             android:text="책id"
             android:layout_width="match_parent"

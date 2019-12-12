@@ -17,4 +17,19 @@
             app:layout_constraintEnd_toEndOf="parent"
             android:id="@+id/diaryList"
             android:longClickable="true" app:layout_constraintTop_toTopOf="parent"/>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/book2"
+            android:id="@+id/imageView2" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginTop="64dp" app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+            android:text="책 내용이 뭐에요?"
+            android:layout_width="301dp"
+            android:layout_height="69dp"
+            android:id="@+id/noitemText2" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:textSize="35dp"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/imageView2"/>
 </android.support.constraint.ConstraintLayout>

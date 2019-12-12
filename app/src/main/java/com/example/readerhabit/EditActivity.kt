@@ -3,12 +3,17 @@ package com.example.readerhabit
 import android.annotation.SuppressLint
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
+import android.view.View.INVISIBLE
+import android.view.View.VISIBLE
 import io.realm.Realm
+import io.realm.Sort
 import io.realm.kotlin.createObject
 import io.realm.kotlin.where
 import kotlinx.android.synthetic.main.activity_edit.*
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.content_main.*
 import org.jetbrains.anko.alert
 import org.jetbrains.anko.toast
 import org.jetbrains.anko.yesButton
@@ -36,7 +41,6 @@ class EditActivity : AppCompatActivity() {
         newItem.date = calender.timeInMillis
 
         realm.commitTransaction()
-
         alert("좋아요 같이 책을 읽어봐요!"){
             yesButton{finish()}
         }.show()
@@ -45,10 +49,8 @@ class EditActivity : AppCompatActivity() {
     private fun deleteBook(id:Long){
         realm.beginTransaction()
         val deleteItem = realm.where<Book>().equalTo("id", id).findFirst()!!
-
         deleteItem.deleteFromRealm()
         realm.commitTransaction()
-
         alert("내용이 삭제되었습니다."){
             yesButton{finish()}
         }.show()

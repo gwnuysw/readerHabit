@@ -9,8 +9,7 @@ open class Book(
     var author: String = "",
     var publisher: String = "",
     var translator: String = "",
-    var date: Long = 0,
-    var aa: Long = 1
+    var date: Long = 0
 ):RealmObject(){
 
 }

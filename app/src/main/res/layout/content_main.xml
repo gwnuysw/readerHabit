@@ -15,4 +15,18 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:longClickable="true" app:layout_constraintTop_toTopOf="parent"/>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/book1"
+            android:id="@+id/imageView" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0" android:layout_marginTop="104dp"
+            app:layout_constraintTop_toTopOf="@+id/listView"/>
+    <TextView
+            android:text="어떤 책을 읽을까요?"
+            android:layout_width="301dp"
+            android:layout_height="69dp"
+            android:id="@+id/noitemText" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" android:textSize="35dp"/>
 </android.support.constraint.ConstraintLayout>
